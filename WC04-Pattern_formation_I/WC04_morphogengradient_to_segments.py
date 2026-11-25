@@ -41,7 +41,7 @@ def reaction_diffusion_step(u, D, dt, dx, decay):
     # for i in range(1, nx-1):
     #     for j in range(1, ny-1):
     #         u[i, j] = (un[i, j] +
-    #                    D * dt / dx**2 * (un[i+1, j] + un[i-1, j] - 2 * un[i, j] +
+    #                    D * dt / dx**2 * (un[i+1, j] + un[i-1, j] +
     #                    un[i, j+1] + un[i, j-1] - 4 * un[i, j]) - decay * un[i, j] * dt)
     #boundary conditions
     u[-1, :] = (u[-2, :]/u[-3, :])*u[-2, :]  if sum(u[-3, :]) != 0 else np.zeros(ny)
