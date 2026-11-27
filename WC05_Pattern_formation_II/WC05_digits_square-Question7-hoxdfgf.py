@@ -210,7 +210,7 @@ for timestep in range(time_steps):
         ax6.set_position([0.7, 0.2, 0.15, 0.1])
         ax6.yaxis.set_visible(False)
 
-        plt.pause(0.000001)  # Pause to refresh the plot
+        plt.pause(0.01)  # Pause to refresh the plot
 
     elif timestep % 100 == 0:
 
