@@ -304,7 +304,7 @@ for timestep in range(time_steps):
         wnt_plot = ax3.imshow(np.rot90(wnt*plot_mask), cmap=blue_dark_cmap, vmin=wnt_vmin, vmax=wnt_vmax)
         ax3.set_title(f'wnt at step {current_time}')
 
-        plt.pause(0.000001)  # Pause to refresh the plot
+        plt.pause(0.01)  # Pause to refresh the plot
 
     # Update plot every 100 steps    
     if timestep % 100 == 0:
