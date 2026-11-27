@@ -898,7 +898,7 @@ for timestep in range(time_steps):
         
         ax6.axis('off')
 
-        plt.pause(0.000001)  # Pause to refresh the plot
+        plt.pause(0.01)  # Pause to refresh the plot
 
     # Update plot every 100 steps    
     elif timestep % 100 == 0:
